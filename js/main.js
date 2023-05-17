@@ -20,7 +20,7 @@ function menu() {
         "\n\nIngrese opcion:\n" +
         "1 - Añadir ingresos\n2 - Añadir gastos\n3 - Resumen\n4 - Eliminar registros\n5 - Salir"));
 
-    while (opciones !== 1 && opciones !== 2 && opciones !== 3 && opciones !== 4 && opciones !== 5) {
+    while (!(opciones >= 1 && opciones <= 5)) {
         opciones = parseInt(prompt(usuario +
             "!\n\nVuelva a intentar:\n1 - Añadir ingresos\n2 - Añadir gastos\n3 - Resumen\n4 - Eliminar registros\n5 - Salir"));
     }
